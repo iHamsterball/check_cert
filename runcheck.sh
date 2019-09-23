@@ -23,7 +23,7 @@ subject=$(sed -n '5p' ./tmp/${1}.info)
 rm -f ./tmp/ca.info
 rm -f ./tmp/${1}.info
 
-DATE="$(echo $(date '+%Y-%m-%d %H:%M:%S'))"
+DATE="$(echo $(date '+%Y-%m-%d %H:%M:%S %Z'))"
 
 nowstamp="$(date -d "$DATE" +%s)"
 expirestamp="$(date -d "$expire" +%s)"
